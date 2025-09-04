@@ -1,0 +1,26 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: my-demo-ap
+  title: My-demo-ap
+  description: something cool i'm. building
+  annotations:
+    github.com/project-slug: manik-dhristhi/my-demo-app
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - react
+    - typescript
+    - frontend
+    - dhristhi
+  links:
+    - url: https://github.com/manik-dhristhi/my-demo-app
+      title: Repository
+      icon: github
+    - url: https://github.com/manik-dhristhi/my-demo-app/actions
+      title: CI/CD Pipeline
+      icon: github
+spec:
+  type: website
+  lifecycle: experimental
+  owner: user:default/guest
+  system: dhristhi-frontend
